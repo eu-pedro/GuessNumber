@@ -1,2 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+:root{
+  --white: #fafafa;
+  --blue: #00348a;
+  --blue-light: #0bbbd6;
+}
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+/* HEADER **************** */
+header{
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.5);
+  background-color: var(--white);
+}
+header h1 {
+  color: var(--blue);
+  font-size: 2.8em;
+  font-weight: 300;
+}
+/* CONTAINER ***************** */
+.container{
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: linear-gradient(to right, #ddd, #ddd, #ddd);
+}
+
+/* FORM ***************** */
+form{
+ background-color: var(--blue-light);
+ display: flex;
+ flex-direction: column;
+ width: 40%;
+ padding: 2rem;
+ margin-top: 3%;
+ border-radius: 0.5rem;
+}
+label{
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+input{
+  border: 0;
+  outline: 0;
+  margin: 5% 0px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 300;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+input:focus{
+  box-shadow: inset 1px 2px 4px 2px rgba(0,0,0,0.1);
+}
+.container form button{
+  cursor: pointer;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  background: var(--blue);
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+  
+}
+.container form button:hover{
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+/* SECTION ************** */
+.container .result-box{
+  margin-top: 3%;
+  background-color: var(--white);
+  width: 40%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+  color: var(--blue);
+}
+.container .result-box h2{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+.container .result-box span{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+/* BTN JOGAR DE NOVO ******************** */
+.container #btnRestart{
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: var(--white);
+  color: var(--blue);
+  padding: 1rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+  transition: 0.2s ease-in-out;
+  display:none;
+}
+.container #btnRestart:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+/* FOOTER ***************** */
+footer{
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  box-shadow: inset 0px 0px 4px 0px rbga(0,0,0,0.5);
+}
+footer p {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 300;
+}
